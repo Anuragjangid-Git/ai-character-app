@@ -1,0 +1,269 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sam {
+  position: relative;
+  background: rgb(245, 216, 160);
+  height: 11.7vmin;
+  width: 13.5vmin;
+  border-top-left-radius: 2vmin;
+  border-top-right-radius: 2vmin;
+}
+
+.hair {
+  position: absolute;
+  top: -1vmin;
+  background-color: rgb(72, 26, 26);
+  width: 100%;
+  height: 3.5vmin;
+  border-top-left-radius: 3.5vmin;
+  border-top-right-radius: 3.5vmin;
+  clip-path: ellipse(50% 70% at 50% 30%);
+  box-shadow: 0px 0.25vmin 0.5vmin rgba(0, 0, 0, 0.3);
+}
+
+.ear_left, .ear_right {
+  position: absolute;
+  top: 3.5vmin;
+  background-color: rgb(245, 216, 160);
+  width: 1.5vmin;
+  height: 1.5vmin;
+  border-radius: 50%;
+}
+
+.ear_left {
+  left: -0.75vmin;
+  transform: rotate(-90deg);
+}
+
+.ear_right {
+  right: -0.75vmin;
+  transform: rotate(90deg);
+}
+
+.eyebrow_left, .eyebrow_right, .eyebrow_leftsad, .eyebrow_rightsad {
+  position: absolute;
+  top: 3vmin;
+  background-color: rgb(72, 26, 26);
+  width: 2vmin;
+  height: 0.5vmin;
+  border-radius: 50%;
+}
+
+.eyebrow_left, .eyebrow_leftsad {
+  left: 3vmin;
+}
+
+.eyebrow_right, .eyebrow_rightsad  {
+  right: 3vmin;
+}
+
+
+.eyebrow_leftsad {
+  transform: rotate(-20deg);
+}
+
+.eyebrow_rightsad {
+  transform: rotate(20deg);
+}
+
+.eye_left, .eye_right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 3.5vmin;
+  background-color: white;
+  width: 2vmin;
+  height: 2vmin;
+  border-radius: 50%;
+}
+
+.eye_left {
+  left: 3vmin;
+}
+
+.eye_right {
+  right: 3vmin;
+}
+
+.pupil_left, .pupil_right {
+  position: absolute;
+  background-color: black;
+  width: 0.75vmin;
+  height: 0.75vmin;
+  border-radius: 50%;
+}
+
+.tears {
+  top: 2vmin;
+  position: absolute;
+  background-color: rgb(87, 87, 241);
+  width: 0.5vmin;
+  height: 3.5vmin;
+  overflow: hidden;
+}
+
+.nose {
+  position: absolute;
+  top: 5vmin;
+  left: 50%;
+  background-color: rgb(245, 216, 160);
+  width: 1.5vmin;
+  height: 1.5vmin;
+  border-radius: 30%;
+  transform: translateX(-50%);
+  box-shadow: 0px 0.25vmin 0.5vmin rgba(0, 0, 0, 0.3);
+}
+
+.mustache {
+  position: absolute;
+  top: 7vmin;
+  left: 5.2vmin;
+  background-color: rgb(72, 26, 26);
+  width: 3vmin;
+  height: 0.75vmin;
+  border-radius: 30%;
+  box-shadow: 0px 0.25vmin 0.5vmin rgba(0, 0, 0, 0.3);
+}
+
+.mouthupset, .mouthhappy {
+  position: absolute;
+  top: 8vmin;
+  left: 50%;
+  background-color: black;
+  width: 2.5vmin;
+  height: 0.75vmin;
+  border-bottom-left-radius: 1.25vmin;
+  border-bottom-right-radius: 1.25vmin;
+  transform: translateX(-50%);
+}
+
+.mouthupset {
+  transform: translateX(-50%) rotate(180deg);
+}
+
+.shirt {
+  position: absolute;
+  top: 9vmin;
+  background-color: rgb(67, 115, 187);
+  width: 100%;
+  height: 5vmin;
+}
+
+.shirt::after {
+  content: '';
+  position: absolute;
+  top: 0.5vmin;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 1.5vmin solid transparent;
+  border-right: 1.5vmin solid transparent;
+  border-top: 1.5vmin solid rgb(245, 216, 160);
+  transform: translate(-50%, -50%) rotate(360deg);
+}
+
+.hand_right {
+  position: absolute;
+  top: -1vmin;
+  right: -3vmin;
+  background-color: rgb(67, 115, 187);
+  width: 0.75vmin;
+  height: 5vmin;
+  transform: rotate(90deg);
+  border-top-right-radius: 1vmin;
+  border-top-left-radius: 1vmin;
+}
+
+.checkmark {
+  position: absolute;
+  right: 2vmin;
+  top: -2.5vmin;
+  transform: rotate(-90deg);
+  color: rgb(151, 227, 36);
+}
+
+.thumb_right {
+  position: absolute;
+  right: -0.1vmin;
+  top: -1.5vmin;
+  transform: rotate(-90deg);
+  color: rgb(245, 216, 160);
+}
+
+.pants {
+  position: absolute;
+  top: 14vmin;
+  background-color: rgb(24, 40, 65);
+  width: 100%;
+  height: 2.5vmin;
+  border-bottom-left-radius: 2vmin;
+  border-bottom-right-radius: 2vmin;
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
+}
+
+@media (max-width: 600px) {
+  .sam {
+    height: 20vmin;
+    width: 25vmin;
+  }
+
+  .hair {
+    height: 6vmin;
+  }
+
+  .ear_left, .ear_right {
+    width: 3vmin;
+    height: 3vmin;
+  }
+
+  .eyebrow_left, .eyebrow_right, .eyebrow_leftsad, .eyebrow_rightsad {
+    width: 4vmin;
+    height: 1vmin;
+  }
+
+  .eye_left, .eye_right {
+    width: 4vmin;
+    height: 4vmin;
+  }
+
+  .pupil_left, .pupil_right {
+    width: 1.5vmin;
+    height: 1.5vmin;
+  }
+
+  .nose {
+    width: 3vmin;
+    height: 3vmin;
+  }
+
+  .mustache {
+    width: 6vmin;
+    height: 1.5vmin;
+  }
+
+  .mouthupset, .mouthhappy {
+    width: 5vmin;
+    height: 1.5vmin;
+  }
+
+  .shirt {
+    height: 10vmin;
+  }
+
+  .hand_right {
+    width: 1.5vmin;
+    height: 10vmin;
+  }
+
+  .pants {
+    height: 5vmin;
+  }
+}
