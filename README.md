@@ -19,6 +19,21 @@ An AI-powered interactive web character built with **React.js**, **Spring Boot**
 - 📱 **Responsive UI** with modern design using Tailwind CSS
 
 ---
+## 📸 Screenshots  
+
+### 🙂 Normal Interaction  
+<img width="1919" height="1048" alt="Screenshot 2025-08-27 194928" src="https://github.com/user-attachments/assets/28314783-4c05-43c4-8369-a6066fd4c428" />
+
+
+### 😍 Compliment Reaction  
+
+<img width="1919" height="1048" alt="Screenshot 2025-08-27 194946" src="https://github.com/user-attachments/assets/640d04c5-61f7-498e-897f-8507af6e2650" />
+
+### 😡 Insult Reaction  
+
+<img width="1919" height="1046" alt="Screenshot 2025-08-27 195003" src="https://github.com/user-attachments/assets/89300c83-fc54-4f06-b0ba-dc8ac0f828e9" />
+
+---
 
 ## 🛠️ Tech Stack
 
